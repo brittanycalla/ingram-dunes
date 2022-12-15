@@ -1,0 +1,118 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Box Model Hack */
+
+* {
+  box-sizing: border-box;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+header {
+}
+
+footer {
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+main::before {
+  content:'';
+  background: #cfca4c;
+  background: linear-gradient(45deg,#cfca4c 0%,#006642 100%);
+  opacity: 0.5;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  height:100%;
+  width: 100%;
+  z-index: 10;
+  /* FOR VIDEO: background: #006642; background: linear-gradient(45deg,#006642 0%,#cfca4c 100%) */
+}
+
+video {
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.inat-observation {
+  display: flex;
+  padding: 0.75rem;
+  border-radius: 5px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  width: 100%;
+  background-color: #fff;
+  gap: .5rem;
+}
+
+.inat-observation-image {
+  align-self: center;
+}
+
+.inat-observation-image img {
+  border-radius: 2px;
+  width: 75px;
+}
+
+.inat-observation-body {
+  font-size: .75rem;
+  width: 75%;
+  align-self: center;
+  font-weight: 500;
+}
+
+table {
+  width: 100%;
+}
+
+tbody{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  grid-gap: 1rem;
+  justify-content: space-between;
+}
+
+@media (min-width: 768px) {
+  .inat-observation {
+    flex-direction: column;
+    width: 190px;
+    padding: 1rem;
+  }
+
+  .inat-observation img {
+    align-self: flex-start;
+  }
+
+  tbody {
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  }
+
+  .inat-observation-body {
+    width: 100%;
+  }
+}
+
+@media (min-width: 1024px) {
+  main::before {
+    background: #006642; 
+    background: linear-gradient(45deg,#006642 0%,#cfca4c 100%);
+    opacity: 0.6;
+  }
+}
