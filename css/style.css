@@ -760,20 +760,20 @@ video {
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\'\/img\/eagles-nest-at-ingram-dunes-2\.jpeg\'\)\] {
-  background-image: url('/img/eagles-nest-at-ingram-dunes-2.jpeg');
+.bg-\[url\(\'\/img\/eagles-nest-at-ingram-dunes-2\.webp\'\)\] {
+  background-image: url('/img/eagles-nest-at-ingram-dunes-2.webp');
 }
 
-.bg-\[url\(\'\/img\/exploring-ingram-dunes\.jpeg\'\)\] {
-  background-image: url('/img/exploring-ingram-dunes.jpeg');
+.bg-\[url\(\'\/img\/exploring-ingram-dunes\.webp\'\)\] {
+  background-image: url('/img/exploring-ingram-dunes.webp');
 }
 
 .bg-gradient-to-br {
   background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
 }
 
-.bg-\[url\(\'\/img\/sunset-ingram-dunes\.jpeg\'\)\] {
-  background-image: url('/img/sunset-ingram-dunes.jpeg');
+.bg-\[url\(\'\/img\/sunset-ingram-dunes\.webp\'\)\] {
+  background-image: url('/img/sunset-ingram-dunes.webp');
 }
 
 .from-accent {
