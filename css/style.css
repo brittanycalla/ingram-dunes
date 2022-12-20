@@ -635,6 +635,19 @@ video {
   min-height: 500px;
 }
 
+.min-h-min {
+  min-height: -moz-min-content;
+  min-height: min-content;
+}
+
+.min-h-\[750px\] {
+  min-height: 750px;
+}
+
+.min-h-\[570px\] {
+  min-height: 570px;
+}
+
 .w-full {
   width: 100%;
 }
@@ -1242,16 +1255,16 @@ tbody{
     padding-top: 6rem;
   }
 
-  .lg\:pr-0 {
-    padding-right: 0px;
-  }
-
   .lg\:pb-10 {
     padding-bottom: 2.5rem;
   }
 
   .lg\:pt-0 {
     padding-top: 0px;
+  }
+
+  .lg\:pr-0 {
+    padding-right: 0px;
   }
 
   .lg\:text-7xl {
