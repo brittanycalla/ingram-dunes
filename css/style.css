@@ -627,25 +627,16 @@ video {
   height: 5px;
 }
 
+.min-h-\[570px\] {
+  min-height: 570px;
+}
+
 .min-h-\[300px\] {
   min-height: 300px;
 }
 
 .min-h-\[500px\] {
   min-height: 500px;
-}
-
-.min-h-min {
-  min-height: -moz-min-content;
-  min-height: min-content;
-}
-
-.min-h-\[750px\] {
-  min-height: 750px;
-}
-
-.min-h-\[570px\] {
-  min-height: 570px;
 }
 
 .w-full {
@@ -1127,6 +1118,10 @@ tbody{
 
   .md\:h-28 {
     height: 7rem;
+  }
+
+  .md\:w-1\/2 {
+    width: 50%;
   }
 
   .md\:max-w-xs {
